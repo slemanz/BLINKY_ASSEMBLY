@@ -78,3 +78,9 @@ STR r1, [r0]
 Espero que este exemplo ajude você a entender melhor os fundamentos da programação em microcontroladores usando Assembly. Lembre-se de configurar adequadamente o código para seu microcontrolador específico antes de realizar a compilação. Se você tiver alguma dúvida ou sugestão, por favor, abra uma issue neste repositório.
 
 Boa codificação!
+
+## Referências
+
+- [STM32F401 - Reference manual](https://www.st.com/resource/en/reference_manual/rm0368-stm32f401xbc-and-stm32f401xde-advanced-armbased-32bit-mcus-stmicroelectronics.pdf)
+
+- [Cortex-M4 Technical Reference Manual](https://developer.arm.com/documentation/ddi0439/b/CHDDIGAC)
