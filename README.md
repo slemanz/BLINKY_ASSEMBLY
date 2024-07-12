@@ -40,6 +40,39 @@ Conecte um LED ao pino GPIOA, pino 11. Geralmente, é necessário um resistor li
 3. Compile o código de acordo com as instruções do seu compilador C.
 4. Faça o upload do binário gerado para o seu STM32F401.
 
+
+## Instruções Usadas no Código
+
+### LDR (Load Register):
+
+- LDR [destino], [fonte]
+- Significado: Carrega um valor da memória para um registrador.
+- Exemplo:
+
+```
+LDR r0, =RCC_AHB1ENR
+```
+
+### ORR (Logical OR):
+
+- ORR [destino], [op1], [op2]
+- Significado: Executa uma operação lógica OR entre dois operandos e armazena o resultado no registrador de destino.
+- Exemplo:
+
+```
+ORR r1, r1, #(1 << 0)
+```
+
+### STR (Store Register):
+
+- STR [valor], [endereço]
+- Significado: Armazena o valor de um registrador em um endereço de memória.
+- Exemplo:
+
+```
+STR r1, [r0]
+```
+
 ---
 
 Espero que este exemplo ajude você a entender melhor os fundamentos da programação em microcontroladores usando Assembly. Lembre-se de configurar adequadamente o código para seu microcontrolador específico antes de realizar a compilação. Se você tiver alguma dúvida ou sugestão, por favor, abra uma issue neste repositório.
